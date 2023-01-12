@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/droidhazard/na-tours/issues"
   },
-  "homepage": "https://github.com/droidhazard/na-tours#readme"
+  "homepage": "https://github.com/droidhazard/na-tours#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
 }
