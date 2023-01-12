@@ -39,7 +39,10 @@ p.red-text {
 
 html {
   font-size: 62.5%;
-  /* 10/16*100 we want the font size to be 10px the default browser font is 16px we divide 10 by 16 and multiply by 100 because we want the font in percentage */ }
+  /* 10/16*100 we want the font size to be 10px (for 10px to equal 1 rem for elements), the default browser font is 16px we divide 10 by 16 and multiply by 100 because we want the font in percentage */ }
+
+body {
+  box-sizing: border-box; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -47,8 +50,31 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
-  box-sizing: border-box; }
+  padding: 3rem; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    /*
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+     */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -109,27 +135,3 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-    /*
-    animation-delay: 3s;
-    animation-iteration-count: 3;
-     */ }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
