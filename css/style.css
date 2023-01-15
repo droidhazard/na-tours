@@ -40,7 +40,7 @@ p.red-text {
 
 html {
   font-size: 62.5%;
-  /* 10/16*100 we want the font size to be 10px (for 10px to equal 1 rem for elements), the default browser font is 16px we divide 10 by 16 and multiply by 100 because we want the font in percentage */ }
+  /* "Defines What 1 rem is", 10/16*100 we want the font size to be 10px (for 10px to equal 1 rem for elements), the default browser font is 16px we divide 10 by 16 and multiply by 100 because we want the font in percentage */ }
 
 body {
   box-sizing: border-box; }
@@ -105,11 +105,14 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
-
-.u-margin-bottom-small {
-  margin-bottom: 2rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -150,6 +153,25 @@ body {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  color: #fff;
+  background-color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 .row {
   max-width: 114rem;

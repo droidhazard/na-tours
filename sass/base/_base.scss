@@ -16,7 +16,7 @@ p.red-text {
 
 html {
   font-size: 62.5%;
-  /* 10/16*100 we want the font size to be 10px (for 10px to equal 1 rem for elements), the default browser font is 16px we divide 10 by 16 and multiply by 100 because we want the font in percentage */
+  /* "Defines What 1 rem is", 10/16*100 we want the font size to be 10px (for 10px to equal 1 rem for elements), the default browser font is 16px we divide 10 by 16 and multiply by 100 because we want the font in percentage */
 }
 
 body {
