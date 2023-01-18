@@ -3,6 +3,7 @@
   // background-color: #ccc;
   margin: 0 auto;
   color: $color-black;
+  color: $color-grey-dark;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
