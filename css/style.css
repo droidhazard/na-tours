@@ -187,7 +187,7 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    transition: all .5s ease;
+    transition: all .8s ease;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem #0003; }
     .card__side--front {
@@ -200,6 +200,8 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture--1 {
+    background-image: url(../img/nat-5.jpg); }
 
 .composition {
   position: relative; }

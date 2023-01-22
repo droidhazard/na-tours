@@ -1,4 +1,5 @@
 .card {
+  // * Functionality 
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 50rem;
@@ -13,7 +14,7 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    transition: all .5s ease;
+    transition: all .8s ease;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem #0003;
 
@@ -35,5 +36,13 @@
   }
   &:hover &__side--back {
     transform: rotateY(0deg);
+  }
+
+  // Front Side Styling
+  &__picture {
+
+    &--1 {
+      background-image: url(../img/nat-5.jpg);
+    }
   }
 }
